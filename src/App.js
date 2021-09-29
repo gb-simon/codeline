@@ -1,15 +1,22 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-import './App.css';
-import Home from './components/Home'
-import CodeReviewComponent from './components/codeReview'
-import AccessModifiersComponent from './components/accessModifiers'
-function App() {
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./components/Home";
+import CodeReviewComponent from "./components/pages/codeReview";
+import AccessModifiersComponent from "./components/pages/accessModifiers";
+import SoftwareArchitectureComponent from "./components/pages/architecture";
+import DesignPatternsComponent from "./components/pages/designpatterns";
+import SolidComponent from "./components/pages/solid";
+import InherenceComponent from "./components/pages/inherence";
+import ClasesComponent from "./components/pages/clases";
+import ApiWebComponent from "./components/pages/apiweb";
+import ApiWebToolsComponent from "./components/pages/apiwebtools";
+import PolymorphismComponent from "./components/pages/polymorphism";
+import ErrorManagementComponent from "./components/pages/errormanagement";
+import TestDrivenComponent from "./components/pages/testdriven";
+import InterfacesComponent from "./components/pages/interfaces";
 
+function App() {
   return (
     <Router>
       <div>
@@ -24,37 +31,37 @@ function App() {
             <AccessModifiersComponent />
           </Route>
           <Route path="/architecture">
-            <AccessModifiersComponent />
+            <SoftwareArchitectureComponent />
           </Route>
           <Route path="/designpatterns">
-            <AccessModifiersComponent />
+            <DesignPatternsComponent />
           </Route>
           <Route path="/solid">
-            <AccessModifiersComponent />
+            <SolidComponent />
           </Route>
           <Route path="/clases">
-            <AccessModifiersComponent />
+            <ClasesComponent />
           </Route>
           <Route path="/inherence">
-            <AccessModifiersComponent />
+            <InherenceComponent />
           </Route>
           <Route path="/interfaces">
-            <AccessModifiersComponent />
+            <InterfacesComponent />
           </Route>
           <Route path="/polymorphism">
-            <AccessModifiersComponent />
+            <PolymorphismComponent />
           </Route>
           <Route path="/apiweb">
-            <AccessModifiersComponent />
+            <ApiWebComponent />
           </Route>
           <Route path="/apiwebtools">
-            <AccessModifiersComponent />
+            <ApiWebToolsComponent />
           </Route>
           <Route path="/errormanagement">
-            <AccessModifiersComponent />
+            <ErrorManagementComponent />
           </Route>
           <Route path="/testdriven">
-            <AccessModifiersComponent />
+            <TestDrivenComponent />
           </Route>
         </Switch>
       </div>

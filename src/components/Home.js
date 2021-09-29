@@ -1,164 +1,169 @@
-import React, { useState } from 'react';
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import React, { useState } from "react";
 import {
-    Link,
-} from "react-router-dom";
-import Header from './Header'
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { Link } from "react-router-dom";
+import Header from "./Header";
 
 function Home() {
-    const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
-    return (
-        <div className={`${darkMode && 'dark-mode'}`}>
-            <div className="container">
-                <Header handleToggleDarkMode={setDarkMode} />
-                <VerticalTimeline>
+  return (
+    <div className={`${darkMode && "dark-mode"}`}>
+      <div className="container">
+        <Header handleToggleDarkMode={setDarkMode} />
+        <h3>
+          {" "}
+          “The most damaging phrase in the language is... it's always been done
+          this way” - Grace Hopper
+        </h3>
+        <VerticalTimeline>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Where is the code review?!"
+          >
+            {" "}
+            <Link className="link" to="codereview">
+              <h3 className="vertical-timeline-element-title">Code Review</h3>
+              <p>¿Qué es y para qué utilizar el code review?</p>
+            </Link>
+          </VerticalTimelineElement>
 
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        date="2010 - 2011"
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Hiding the internals of the object protects its integrity by preventing users from setting the internal data of the component into an invalid or inconsistent state."
+          >
+            <Link className="link" to="modifiers">
+              <h3 className="vertical-timeline-element-title">Modificadores</h3>
+              <p>
+                ¿Cuáles son los niveles de acceso y cómo funcionan?
+                (Modificadores)
+              </p>{" "}
+            </Link>
+          </VerticalTimelineElement>
 
-                    > <Link to="codereview">
-                            <h3 className="vertical-timeline-element-title">Code Review</h3>
-                            <p>
-                                ¿Qué es y para qué utilizar el code review?
-                            </p>
-                        </Link>
-                    </VerticalTimelineElement>
-
-
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        date="2008 - 2010"
-
-                    ><Link to="modifiers">
-                            <h3 className="vertical-timeline-element-title">Modificadores</h3>
-                            <p>
-                                ¿Cuáles son los niveles de acceso y cómo funcionan? (Modificadores)
-                            </p> </Link>
-                    </VerticalTimelineElement>
-
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        date="2006 - 2008"
-
-                    ><Link to="architecture">
-                            <h3 className="vertical-timeline-element-title">Patrones de Arquitectura</h3>
-                            <p>
-                                ¿Qué patrones de arquitectura conoces y cómo funcionan?
-                                (Capas, Cliente-Servidor, Maestro-Esclavo, MVC, Etc..)
-                            </p> </Link>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="April 2013"
-
-                    ><Link to="designpatterns">
-                            <h3 className="vertical-timeline-element-title">Patrones de Diseño</h3>
-                            <p>
-                                ¿Qué patrones de diseño conoces y cómo funcionan?
-                                (Creacionales, Estructurales, Comportamiento)
-
-                            </p> </Link>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="November 2012"
-
-                    ><Link to="solid">
-                            <h3 className="vertical-timeline-element-title">Principio SOLID</h3>
-                            <p>
-                                ¿Qué es SOLID?
-                            </p> </Link>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="2002 - 2006"
-
-                    ><Link to="clases">
-                            <h3 className="vertical-timeline-element-title">Clases</h3>
-                            <p>
-                                POO: ¿Que es una Clase?
-                            </p> </Link>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="2002 - 2006"
-
-                    ><Link to="inherence">
-                            <h3 className="vertical-timeline-element-title">Herencia</h3>
-                            <p>
-                            POO: ¿Qué es y para que se utiliza la herencia?
-                            </p> </Link>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="2002 - 2006"
-
-                    ><Link to="interfaces">
-                            <h3 className="vertical-timeline-element-title">Interfaces</h3>
-                            <p>
-                            POO: ¿Qué es y para que se utilizan las interfaces?
-                            </p> </Link>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="2002 - 2006"
-
-                    ><Link to="polymorphism">
-                            <h3 className="vertical-timeline-element-title">Polimorfismo</h3>
-                            <p>
-                            POO: ¿Qué es el polimorfismo?
-                            </p> </Link>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="2002 - 2006"
-
-                    ><Link to="apiweb">
-                            <h3 className="vertical-timeline-element-title">Api Web</h3>
-                            <p>
-                            ¿Qué es y cómo funciona una API web?
-                            </p> </Link>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="2002 - 2006"
-
-                    ><Link to="apiwebtools">
-                            <h3 className="vertical-timeline-element-title">Herramientas Api Web</h3>
-                            <p>
-                            ¿Qué herramientas se pueden utilizar para probar Web APIs?
-                            </p> </Link>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="2002 - 2006"
-
-                    ><Link to="errormanagement">
-                            <h3 className="vertical-timeline-element-title">Manejo de errores</h3>
-                            <p>
-                            ¿Qué herramienta has utilizado para el manejo de errores?
-                            </p> </Link>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--education"
-                        date="2002 - 2006"
-
-                    ><Link to="testdriven">
-                            <h3 className="vertical-timeline-element-title">Test</h3>
-                            <p>
-                            Test driven development
-                            </p> </Link>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-
-                    />
-                </VerticalTimeline>
-            </div >
-        </div >
-    );
-};
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="To create architecure is to put in order, put what in order? function and objects"
+          >
+            <Link className="link" to="architecture">
+              <h3 className="vertical-timeline-element-title">
+                Patrones de Arquitectura
+              </h3>
+              <p>
+                ¿Qué patrones de arquitectura conoces y cómo funcionan? (Capas,
+                Cliente-Servidor, Maestro-Esclavo, MVC, Etc..)
+              </p>{" "}
+            </Link>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="Design Patterns, design patterns everywhere"
+          >
+            <Link className="link" to="designpatterns">
+              <h3 className="vertical-timeline-element-title">
+                Patrones de Diseño
+              </h3>
+              <p>
+                ¿Qué patrones de diseño conoces y cómo funcionan? (Creacionales,
+                Estructurales, Comportamiento)
+              </p>{" "}
+            </Link>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="So if you want to go fast, if you want to get done quickly, if you want your code to be easy to write, make it easy to read"
+          >
+            <Link className="link" to="solid">
+              <h3 className="vertical-timeline-element-title">
+                Principio SOLID
+              </h3>
+              <p>¿Qué es SOLID?</p>{" "}
+            </Link>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="A class is written by a programmer in a defined structure to create an object (computer science) in an object oriented programming language"
+          >
+            <Link className="link" to="clases">
+              <h3 className="vertical-timeline-element-title">Clases</h3>
+              <p>POO: ¿Que es una Clase?</p>{" "}
+            </Link>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2002 - 2006"
+          >
+            <Link className="link" to="inherence">
+              <h3 className="vertical-timeline-element-title">Herencia</h3>
+              <p>POO: ¿Qué es y para que se utiliza la herencia?</p>{" "}
+            </Link>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2002 - 2006"
+          >
+            <Link className="link" to="interfaces">
+              <h3 className="vertical-timeline-element-title">Interfaces</h3>
+              <p>POO: ¿Qué es y para que se utilizan las interfaces?</p>{" "}
+            </Link>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2002 - 2006"
+          >
+            <Link className="link" to="polymorphism">
+              <h3 className="vertical-timeline-element-title">Polimorfismo</h3>
+              <p>POO: ¿Qué es el polimorfismo?</p>{" "}
+            </Link>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2002 - 2006"
+          >
+            <Link className="link" to="apiweb">
+              <h3 className="vertical-timeline-element-title">Api Web</h3>
+              <p>¿Qué es y cómo funciona una API web?</p>{" "}
+            </Link>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2002 - 2006"
+          >
+            <Link className="link" to="apiwebtools">
+              <h3 className="vertical-timeline-element-title">
+                Herramientas Api Web
+              </h3>
+              <p>¿Qué herramientas se pueden utilizar para probar Web APIs?</p>{" "}
+            </Link>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2002 - 2006"
+          >
+            <Link className="link" to="errormanagement">
+              <h3 className="vertical-timeline-element-title">
+                Manejo de errores
+              </h3>
+              <p>¿Qué herramienta has utilizado para el manejo de errores?</p>{" "}
+            </Link>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="Testing leads to failure, and failure leads to understanding"
+          >
+            <Link className="link" to="testdriven">
+              <h3 className="vertical-timeline-element-title">Test</h3>
+              <p>Test driven development</p>{" "}
+            </Link>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement />
+        </VerticalTimeline>
+      </div>
+    </div>
+  );
+}
 
 export default Home;

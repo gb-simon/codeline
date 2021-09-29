@@ -1,11 +1,12 @@
-import React from "react";
-import "./styles.css";
+import "../styles.css";
+import { Link } from "react-router-dom";
 
 function CodeReviewComponent() {
   return (
     <div className="body">
       <h1>Code Review</h1>
       <hr className="black" />
+      <button>  <Link to="/"> Go Back </Link> </button>
       <p>
         When a developer is finished working on an issue, another developer
         looks over the code and considers questions like:

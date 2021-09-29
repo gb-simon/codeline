@@ -5,6 +5,7 @@
   font-family: "Raleway", sans-serif;
   width: 50%;
   padding: 10px;
+  font-size: larger;
 }
 
 .title{
@@ -13,4 +14,9 @@
 
 .black{
     color: black;
+}
+
+.link{
+  text-decoration: none !important;
+  color: black;
 }
