@@ -1,24 +1,64 @@
-import logo from './logo.svg';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import './App.css';
-
+import Home from './components/Home'
+import CodeReviewComponent from './components/codeReview'
+import AccessModifiersComponent from './components/accessModifiers'
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/codereview">
+            <CodeReviewComponent />
+          </Route>
+          <Route path="/modifiers">
+            <AccessModifiersComponent />
+          </Route>
+          <Route path="/architecture">
+            <AccessModifiersComponent />
+          </Route>
+          <Route path="/designpatterns">
+            <AccessModifiersComponent />
+          </Route>
+          <Route path="/solid">
+            <AccessModifiersComponent />
+          </Route>
+          <Route path="/clases">
+            <AccessModifiersComponent />
+          </Route>
+          <Route path="/inherence">
+            <AccessModifiersComponent />
+          </Route>
+          <Route path="/interfaces">
+            <AccessModifiersComponent />
+          </Route>
+          <Route path="/polymorphism">
+            <AccessModifiersComponent />
+          </Route>
+          <Route path="/apiweb">
+            <AccessModifiersComponent />
+          </Route>
+          <Route path="/apiwebtools">
+            <AccessModifiersComponent />
+          </Route>
+          <Route path="/errormanagement">
+            <AccessModifiersComponent />
+          </Route>
+          <Route path="/testdriven">
+            <AccessModifiersComponent />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
