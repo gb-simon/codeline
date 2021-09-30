@@ -7,7 +7,6 @@ import "react-vertical-timeline-component/style.min.css";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import './styles.css';
-import codeicon from '../codeicon.png'
 
 
 function Home() {
@@ -28,8 +27,6 @@ function Home() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Where is the code review?!"
-            IconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<codeicon />}
           >
             {" "}
             <Link className="link" to="codereview">

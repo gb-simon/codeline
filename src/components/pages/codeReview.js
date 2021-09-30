@@ -40,7 +40,7 @@ function CodeReviewComponent() {
       </ul>
 
       <img
-        alt="descriptive image of code review"
+        alt="code review descriptive"
         src="https://miro.medium.com/max/700/1*0Ydp3fxHWjDfZcu09109qw.png"
       />
       <p>
