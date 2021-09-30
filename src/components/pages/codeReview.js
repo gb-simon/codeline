@@ -6,65 +6,113 @@ function CodeReviewComponent() {
     <div className="body">
       <h1>Code Review</h1>
       <hr className="black" />
-      <button>  <Link to="/"> Go Back </Link> </button>
+      <button>
+        {" "}
+        <Link to="/"> Go Back </Link>{" "}
+      </button>
+      <h2> ¿Que es Code Review? </h2>
       <p>
-        When a developer is finished working on an issue, another developer
-        looks over the code and considers questions like:
+        Una revisión de código es un proceso de proporcionar comentarios sobre
+        el código de alguien, especialmente en lo que respecta a las solicitudes
+        de extracción, que suelen ser un grupo de confirmaciones agrupadas para
+        ofrecer una función en particular.{" "}
+      </p>
+      <p>
+        Una revisión de código da como resultado el rechazo o la aprobación de
+        cambios en la base de código, preferiblemente antes de que se
+        implementen en producción.{" "}
+      </p>
+      <p>
+        Una revisión de código es un examen sistemático del código fuente del
+        software que podría generar una mejora incremental en la base del
+        código.{" "}
+      </p>
+
+      <h2> ¿Para que sirve hacer Code Review? </h2>
+
+      <h4> Las revisiones de código generalmente ayudan a:</h4>
+      <ul>
+        {" "}
+        <li> Atrapando bichos (Localizar <i>bugs</i>) </li>
+        <li>Garantizar la legibilidad y el mantenimiento del código.</li>
+        <li>Difundir el conocimiento del código base en el equipo</li>
+        <li>Exponer a todos a diferentes enfoques</li>
+      </ul>
+
+      <img
+        alt="descriptive image of code review"
+        src="https://miro.medium.com/max/700/1*0Ydp3fxHWjDfZcu09109qw.png"
+      />
+      <p>
+        Cuando un desarrollador termina de trabajar en un problema, otro
+        desarrollador revisa el código y considera preguntas como:
       </p>
       <ul>
-        <li>Are there any obvious logic errors in the code?</li>
-        <li>Looking at the requirements, are all cases fully implemented?</li>
+        <li>¿Hay errores lógicos obvios en el código?</li>
         <li>
-          Are the new automated tests sufficient for the new code? Do existing
-          automated tests need to be rewritten to account for changes in the
-          code?
+          En cuanto a los requisitos, ¿están todos los casos completamente
+          implementados?
         </li>
-        <li>Does the new code conform to existing style guidelines?</li>
+        <li>
+          ¿Son suficientes las nuevas pruebas automatizadas para el nuevo
+          código? Hacer existente Las pruebas automatizadas deben reescribirse
+          para tener en cuenta los cambios en el ¿código?
+        </li>
+        <li>¿El nuevo código se ajusta a las pautas de estilo existentes?</li>
       </ul>
 
       <p>
-        As code reviews expose developers to new ideas and technologies, they
-        write better and better code.
+        A medida que las revisiones de código exponen a los desarrolladores a
+        nuevas ideas y tecnologías, escribir cada vez mejor código.
       </p>
 
       <ul>
         <li>
-          Better code quality – improve internal code quality and
-          maintainability (readability, uniformity, understandability, etc.)
+          Mejor calidad del código: mejore la calidad del código interno y
+          mantenibilidad (legibilidad, uniformidad, comprensibilidad, etc.)
         </li>
         <li>
-          Finding defects – improve quality regarding external aspects,
-          especially correctness, but also find performance problems, security
-          vulnerabilities, injected malware, ...
+          Encontrar defectos: mejorar la calidad con respecto a los aspectos
+          externos, especialmente la corrección, pero también encuentran
+          problemas de rendimiento, seguridad vulnerabilidades, malware
+          inyectado, ...
         </li>
         <li>
-          Learning/Knowledge transfer – help in transferring knowledge about the
-          codebase, solution approaches, expectations regarding quality, etc.;
-          both to the reviewers as well as to the author
+          Transferencia de aprendizaje / conocimiento: ayuda para transferir
+          conocimientos sobre el base de código, enfoques de soluciones,
+          expectativas de calidad, etc .; tanto a los revisores como al autor
         </li>
         <li>
-          Increase sense of mutual responsibility – increase a sense of
-          collective code ownership and solidarity
+          Incrementar el sentido de responsabilidad mutua - incrementar el
+          sentido de código colectivo propiedad y solidaridad
         </li>
         <li>
-          Finding better solutions – generate ideas for new and better solutions
-          and ideas that transcend the specific code at hand.
+          Encontrar mejores soluciones: generar ideas para nuevas y mejores
+          soluciones e ideas que trascienden el código específico en cuestión.
         </li>
         <li>
-          Complying to QA guidelines, ISO/IEC standards – Code reviews are
-          mandatory in some contexts, e.g., air traffic software,
-          safety-critical software
+          Cumpliendo con las pautas de control de calidad, las normas ISO / IEC:
+          las revisiones del código son obligatorio en algunos contextos, por
+          ejemplo, software de tráfico aéreo, software de seguridad crítica
         </li>
       </ul>
       <p>
-        Code reviews should integrate with a team’s existing process. For
-        example, if a team is using task branching workflows, initiate a code
-        review after all the code has been written and automated tests have been
-        run and passed–but before the code is merged upstream. This ensures the
-        code reviewer’s time is spent checking for things machines miss, and
-        prevents poor coding decisions from polluting the main line of
-        development.
+        Las revisiones de código deben integrarse con el proceso existente de un
+        equipo. Para ejemplo, si un equipo está usando flujos de trabajo de
+        ramificación de tareas, inicie un código revisar después de que se haya
+        escrito todo el código y se hayan realizado las pruebas automatizadas
+        ejecutar y pasar, pero antes de que el código se fusione en sentido
+        ascendente. Esto asegura la el tiempo del revisor de código se dedica a
+        verificar las cosas que las máquinas pasan por alto, y evita que las
+        malas decisiones de codificación contaminen la línea principal de
+        desarrollo.
       </p>
+
+      <span>
+        <a href="https://blog.lelonek.me/how-should-we-do-code-reviews-ced54cede375">
+          Fuente{" "}
+        </a>
+      </span>
     </div>
   );
 }

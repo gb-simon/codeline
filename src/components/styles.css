@@ -20,3 +20,13 @@
   text-decoration: none !important;
   color: black;
 }
+
+.sub-title {
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+
+li{
+  padding-top:25px;
+}

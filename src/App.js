@@ -7,7 +7,7 @@ import AccessModifiersComponent from "./components/pages/accessModifiers";
 import SoftwareArchitectureComponent from "./components/pages/architecture";
 import DesignPatternsComponent from "./components/pages/designpatterns";
 import SolidComponent from "./components/pages/solid";
-import InherenceComponent from "./components/pages/inherence";
+import InheritanceComponent from "./components/pages/inheritance";
 import ClasesComponent from "./components/pages/clases";
 import ApiWebComponent from "./components/pages/apiweb";
 import ApiWebToolsComponent from "./components/pages/apiwebtools";
@@ -42,8 +42,8 @@ function App() {
           <Route path="/clases">
             <ClasesComponent />
           </Route>
-          <Route path="/inherence">
-            <InherenceComponent />
+          <Route path="/inheritance">
+            <InheritanceComponent />
           </Route>
           <Route path="/interfaces">
             <InterfacesComponent />

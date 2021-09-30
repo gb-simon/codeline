@@ -1,30 +1,30 @@
 .dark-mode {
-	background-color: #243447;
+  background-color: #243447;
 }
 
 .dark-mode h1 {
-	color: white;
+  color: white;
 }
 
 .darkmode-icon {
-	border: none;
-	background-color: #e1e1e1;
-	border-radius: 15px;
-	padding: 5px 10px 5px 10px;
-	cursor: pointer;
+  border: none;
+  background-color: #e1e1e1;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
 }
 
 .container {
-	max-width: 960px;
-	margin-right: auto;
-	margin-left: auto;
-	padding-right: 15px;
-	padding-left: 15px;
-	min-height: 100vh;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
 }
 
 .header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

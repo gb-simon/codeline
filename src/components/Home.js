@@ -6,23 +6,30 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { Link } from "react-router-dom";
 import Header from "./Header";
+import './styles.css';
+import codeicon from '../codeicon.png'
+
 
 function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  
 
   return (
     <div className={`${darkMode && "dark-mode"}`}>
       <div className="container">
         <Header handleToggleDarkMode={setDarkMode} />
-        <h3>
+        <h3 className='sub-title'>
           {" "}
           “The most damaging phrase in the language is... it's always been done
           this way” - Grace Hopper
         </h3>
+       
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="Where is the code review?!"
+            IconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            icon={<codeicon />}
           >
             {" "}
             <Link className="link" to="codereview">
@@ -94,16 +101,16 @@ function Home() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="2002 - 2006"
+            date="extensible program-code-template for creating objects"
           >
-            <Link className="link" to="inherence">
+            <Link className="link" to="inheritance">
               <h3 className="vertical-timeline-element-title">Herencia</h3>
               <p>POO: ¿Qué es y para que se utiliza la herencia?</p>{" "}
             </Link>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="2002 - 2006"
+            date="Inheritance has recently fallen out of favor as a programming design solution in many programming languages"
           >
             <Link className="link" to="interfaces">
               <h3 className="vertical-timeline-element-title">Interfaces</h3>
@@ -112,7 +119,7 @@ function Home() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="2002 - 2006"
+            date="the fact that oo languages provide safe and convenient polymorphism means that any source code dependency, no matter where it is, can be inverted"
           >
             <Link className="link" to="polymorphism">
               <h3 className="vertical-timeline-element-title">Polimorfismo</h3>
@@ -121,7 +128,7 @@ function Home() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="2002 - 2006"
+            date="Use the API, Luke"
           >
             <Link className="link" to="apiweb">
               <h3 className="vertical-timeline-element-title">Api Web</h3>
@@ -130,7 +137,7 @@ function Home() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="2002 - 2006"
+            date="You tried adding a RESTFUL API?"
           >
             <Link className="link" to="apiwebtools">
               <h3 className="vertical-timeline-element-title">
@@ -141,7 +148,7 @@ function Home() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="2002 - 2006"
+            date="Have you tried turning it of and on again? HTTP 403 FORBIDDEN You shall not pass"
           >
             <Link className="link" to="errormanagement">
               <h3 className="vertical-timeline-element-title">
