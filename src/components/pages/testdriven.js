@@ -30,6 +30,11 @@ function TestDrivenComponent() {
           y se comporta bien con las funcionalidades anteriores
         </li>
       </ul>
+
+
+      <h3>Example (in JavaScript) </h3>
+     <p>Suppose there is a function written in file add.js </p>
+
       <span>
         <a href="https://gonzalosimon.hashnode.dev/javascript-challenge-with-test-job-interview-challenge">
           Enlace a mi articulo

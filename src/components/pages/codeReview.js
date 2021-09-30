@@ -11,6 +11,11 @@ function CodeReviewComponent() {
         <Link to="/"> Go Back </Link>{" "}
       </button>
       <h2> ¿Que es Code Review? </h2>
+
+      <img
+        alt="meme sobre code review, wtf per minute"
+        src="https://i2.wp.com/commadot.com/wp-content/uploads/2009/02/wtf.png?w=550&ssl=1"
+      />
       <p>
         Una revisión de código es un proceso de proporcionar comentarios sobre
         el código de alguien, especialmente en lo que respecta a las solicitudes
@@ -33,7 +38,10 @@ function CodeReviewComponent() {
       <h4> Las revisiones de código generalmente ayudan a:</h4>
       <ul>
         {" "}
-        <li> Atrapando bichos (Localizar <i>bugs</i>) </li>
+        <li>
+          {" "}
+          Atrapando bichos (Localizar <i>bugs</i>){" "}
+        </li>
         <li>Garantizar la legibilidad y el mantenimiento del código.</li>
         <li>Difundir el conocimiento del código base en el equipo</li>
         <li>Exponer a todos a diferentes enfoques</li>
@@ -111,6 +119,11 @@ function CodeReviewComponent() {
       <span>
         <a href="https://blog.lelonek.me/how-should-we-do-code-reviews-ced54cede375">
           Fuente{" "}
+        </a>
+      </span>
+      <span>
+        <a href="https://commadot.com/wtf-per-minute/">
+          Buen articulo sobre el tema{" "}
         </a>
       </span>
     </div>

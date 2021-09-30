@@ -60,15 +60,14 @@ function DesignPatternsComponent() {
       <ul>
         {" "}
         <li>
-          1. Creacional: estos patrones están diseñados para la instanciación de
-          clases. Pueden ser patrones de creación de clases o creación de
-          objetos. patrones.
+          1. Creacional: estos patrones están diseñados para la creación de
+          clases o creación de objetos.
         </li>{" "}
         <li>
           2. Estructural: estos patrones están diseñados con respecto a la clase
           estructura y composición. El objetivo principal de la mayoría de estos
-          patrones es para aumentar la funcionalidad de la (s) clase (s)
-          involucradas, sin cambiando gran parte de su composición.
+          patrones es para aumentar la funcionalidad de la clase involucradas,
+          sin cambiar gran parte de su composición.
         </li>
         <li>
           3. Comportamiento: estos patrones se diseñan en función de cómo una
@@ -76,6 +75,13 @@ function DesignPatternsComponent() {
         </li>
       </ul>{" "}
       <h2>Tipo 1: Creacional - El patrón de diseño Singleton</h2>
+      <h3> Proposito</h3>
+      <p>
+        {" "}
+        Singleton es un patrón de diseño creacional que nos permite asegurarnos
+        de que una clase tenga una única instancia, a la vez que proporciona un
+        punto de acceso global a dicha instancia.
+      </p>
       <p>
         El Patrón de Diseño Singleton es un patrón Creacional, cuyo objetivo es
         para crear solo una instancia de una clase y para proporcionar solo una
@@ -103,13 +109,76 @@ function DesignPatternsComponent() {
         </li>
       </ul>
       <h2>Tipo 2: Estructural: el patrón de diseño del decorador</h2>
-      <p>Description here</p>
+      <h3> Proposito</h3>
+      <p>
+        {" "}
+        Decorator es un patrón de diseño estructural que te permite añadir
+        funcionalidades a objetos colocando estos objetos dentro de objetos
+        encapsuladores especiales que contienen estas funcionalidades.
+      </p>
+      <img
+        alt="cuadro descriptivo"
+        src="https://refactoring.guru/images/patterns/content/decorator/decorator.png"
+      />
+      <p>
+        Decorator es un patrón de diseño estructural que te permite añadir
+        funcionalidades a objetos colocando estos objetos dentro de objetos
+        encapsuladores especiales que contienen estas funcionalidades. El patrón
+        de diseño Decorador es una estrategia de diseño revelada en 1994 para
+        expandir la funcionalidad de las clases dinámicamente en el software de
+        computación orientado a objetos. Según este patrón, cualquier objeto
+        puede complementarse con un comportamiento deseado sin influir en las
+        funcionalidades de otros objetos de la misma clase. Desde el punto de
+        vista estructural, el patrón Decorador tiene mucho en común con el
+        patrón Cadena de Responsabilidad (Chain of Responsibility), aunque, en
+        contraste con este, con un procesador central, todas las clases reciben
+        las peticiones
+      </p>
       <p>Tip</p>
       <ul>
-        <li> 1</li>
-        <li> 1</li>
-        <li> 1</li>
+        <li>
+          Hacer que los componentes del software orientado a objetos sean más
+          flexibles y fáciles de reutilizar
+        </li>
+        <li>
+          Permite a los desarrolladores añadir y eliminar las dependencias de un
+          objeto de manera dinámica
+        </li>
+        <li>
+          {" "}
+          Añadir funcionalidades a objetos colocando estos objetos dentro de
+          objetos
+        </li>
       </ul>
+      <h3>Something else</h3>
+      <ul>
+        Un ejemplo para poder ver la aplicabilidad del patrón decorador podría
+        ser el siguiente:
+        <li>
+          Disponemos de una herramienta para crear interfaces gráﬁcas, que
+          permite añadir funcionalidades como bordes o barras de desplazamiento
+          a cualquier componente de la interfaz.
+        </li>
+        <li>
+          Una posible solución sería utilizar la herencia para extender las
+          responsabilidades de la clase. Si optamos por esta solución,
+          estaríamos haciendo un diseño inflexible (estático), ya que el cliente
+          no puede controlar cuándo y cómo decorar el componente con esa
+          propiedad.
+        </li>
+        <li>
+          {" "}
+          La solución está en encapsular dentro de otro objeto, llamado
+          Decorador, las nuevas responsabilidades. El decorador redirige las
+          peticiones al componente y, además, puede realizar acciones
+          adicionales antes y después de la redirección. De este modo, se pueden
+          añadir decoradores con cualidades añadidas recursivamente.
+        </li>
+      </ul>
+      <img
+        alt="cuadro descriptivo"
+        src="https://upload.wikimedia.org/wikipedia/commons/b/be/DecoradorConcretoF.jpg"
+      />
       <h2>Type 3: Behavioral - The Command Design Pattern</h2>
       <p>
         Un patrón de diseño de comportamiento se centra en cómo las clases y los
@@ -123,7 +192,26 @@ function DesignPatternsComponent() {
         <li> 1 </li>
         <li> 1 </li>
       </ul>
-      <span><a href="https://www.freecodecamp.org/news/the-basic-design-patterns-all-developers-need-to-know/">Fuente</a></span>
+      <span>
+        <a href="https://www.freecodecamp.org/news/the-basic-design-patterns-all-developers-need-to-know/">
+          Fuente
+        </a>
+      </span>
+      <span>
+        <a href="https://es.wikipedia.org/wiki/Decorator_(patr%C3%B3n_de_dise%C3%B1o)/">
+          Fuente
+        </a>
+      </span>
+      <span>
+        <a href="https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-patron-de-diseno-decorator/">
+          Fuente
+        </a>
+      </span>
+      <span>
+        <a href="https://refactoring.guru/es/design-patterns/decorator">
+          Fuente
+        </a>
+      </span>
     </div>
   );
 }
