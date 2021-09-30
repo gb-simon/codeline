@@ -1,12 +1,16 @@
 import "../styles.css";
 import { Link } from "react-router-dom";
+import { MdArrowBack } from "react-icons/md";
 
 function ClasesComponent() {
   return (
     <div className="body">
       <h1>Clases</h1>
-      <hr className="black" />
-      <button>  <Link to="/"> Go Back </Link> </button>
+      <hr />
+      <Link to="/">
+        {" "}
+        <MdArrowBack size={50} />
+      </Link>
       <p>
         Las clases son una plantilla para crear objetos. Encapsulan datos con
         código para trabajar con esos datos. Las clases en JS se basan en

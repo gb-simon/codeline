@@ -1,15 +1,16 @@
 import "../styles.css";
 import { Link } from "react-router-dom";
+import { MdArrowBack } from "react-icons/md";
 
 function SoftwareArchitectureComponent() {
   return (
     <div className="body">
       <h1>Arquitecturas de software</h1>
-      <hr className="black" />
-      <button>
+      <hr />
+      <Link to="/">
         {" "}
-        <Link to="/"> Go Back </Link>{" "}
-      </button>
+        <MdArrowBack size={50} />
+      </Link>
       <p>
         <i>Del libro Programer to software architecture. By Michael Keeling</i>
       </p>

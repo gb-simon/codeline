@@ -1,15 +1,16 @@
 import "../styles.css";
 import { Link } from "react-router-dom";
+import { MdArrowBack } from "react-icons/md";
 
 function ApiWebToolsComponent() {
   return (
     <div className="body">
       <h1>Api Web Tools</h1>
-      <hr className="black" />
-      <button>
+      <hr />
+      <Link to="/">
         {" "}
-        <Link to="/"> Go Back </Link>{" "}
-      </button>
+        <MdArrowBack size={50} />
+      </Link>
 
       <h2>Que son las API Tools?</h2>
 

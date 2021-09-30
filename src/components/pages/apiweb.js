@@ -1,15 +1,16 @@
 import "../styles.css";
 import { Link } from "react-router-dom";
+import { MdArrowBack } from "react-icons/md";
 
 function ApiWebComponent() {
   return (
     <div className="body">
       <h1>Application Programming Interface</h1>
-      <hr className="black" />
-      <button>
+      <hr />
+      <Link to="/">
         {" "}
-        <Link to="/"> Go Back </Link>{" "}
-      </button>
+        <MdArrowBack size={50} />
+      </Link>
       <p>
         Une API Web est le rêve d'un développeur.
         <ul>

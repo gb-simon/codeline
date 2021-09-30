@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import CodeReviewComponent from "./components/pages/codeReview";
 import AccessModifiersComponent from "./components/pages/accessModifiers";
 import SoftwareArchitectureComponent from "./components/pages/architecture";
-import DesignPatternsComponent from "./components/pages/designpatterns";
+import DesignPatternsComponent from "./components/pages/designPatterns";
 import SolidComponent from "./components/pages/solid";
 import InheritanceComponent from "./components/pages/inheritance";
 import ClasesComponent from "./components/pages/clases";

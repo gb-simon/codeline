@@ -1,19 +1,20 @@
 import "../styles.css";
 import { Link } from "react-router-dom";
+import { MdArrowBack } from "react-icons/md";
 
 function InterfacesComponent() {
   return (
     <div className="body">
       <h1>Interfaces</h1>
-      <hr className="black" />
-      <button>
+      <hr />
+      <Link to="/">
         {" "}
-        <Link to="/"> Go Back </Link>{" "}
-      </button>
+        <MdArrowBack size={50} />
+      </Link>
       <p>
-        Interface in Java is a bit like the Class, but with a significant
-        difference: an interface can only have method signatures, fields and
-        default methods. Since Java 8, you can also create default methods
+        Another way to achieve abstraction in Java, is with interfaces. An
+        interface is a completely "abstract class" that is used to group related
+        methods with empty bodies
       </p>
     </div>
   );

@@ -1,15 +1,16 @@
 import "../styles.css";
 import { Link } from "react-router-dom";
+import { MdArrowBack } from "react-icons/md";
 
 function DesignPatternsComponent() {
   return (
     <div className="body">
       <h1>Patrones de Diseño </h1>
-      <hr className="black" />
-      <button>
+      <hr />
+      <Link to="/">
         {" "}
-        <Link to="/"> Go Back </Link>{" "}
-      </button>
+        <MdArrowBack size={50} />
+      </Link>
       <br />
       <br />
       <img
@@ -180,33 +181,46 @@ function DesignPatternsComponent() {
         src="https://upload.wikimedia.org/wikipedia/commons/b/be/DecoradorConcretoF.jpg"
       />
       <h2>Type 3: Behavioral - The Command Design Pattern</h2>
+      <h3>Proposito</h3>
+      <p>
+        Command es un patrón de diseño de comportamiento que convierte una
+        solicitud en un objeto independiente que contiene toda la información
+        sobre la solicitud. Esta transformación te permite parametrizar los
+        métodos con diferentes solicitudes, retrasar o poner en cola la
+        ejecución de una solicitud y soportar operaciones que no se pueden
+        realizar
+      </p>
       <p>
         Un patrón de diseño de comportamiento se centra en cómo las clases y los
         objetos comunicarse entre sí. El enfoque principal del patrón de comando
         es inculcar un mayor grado de acoplamiento flexible entre las partes
         involucradas (lea: clases).
       </p>
-      <p>Tip</p>
+      <p>Lo que implementa es</p>
       <ul>
-        <li> 1 </li>
-        <li> 1 </li>
-        <li> 1 </li>
+        <li> Una interfaz Comando </li>
+        <li> Una orden de clase que implementa la interfaz de comandos </li>
+        <li> Una clase invocadora </li>
+        <li> Una clase receptoras </li>
       </ul>
       <span>
         <a href="https://www.freecodecamp.org/news/the-basic-design-patterns-all-developers-need-to-know/">
           Fuente
         </a>
       </span>
+      <br />
       <span>
         <a href="https://es.wikipedia.org/wiki/Decorator_(patr%C3%B3n_de_dise%C3%B1o)/">
           Fuente
         </a>
       </span>
+      <br />
       <span>
         <a href="https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-es-el-patron-de-diseno-decorator/">
           Fuente
         </a>
       </span>
+      <br />
       <span>
         <a href="https://refactoring.guru/es/design-patterns/decorator">
           Fuente
