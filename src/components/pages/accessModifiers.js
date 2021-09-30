@@ -1,22 +1,23 @@
 import "../styles.css";
 import { Link } from "react-router-dom";
+import { MdArrowBack } from "react-icons/md";
 
 function AccessModifiersComponent() {
   return (
     <div className="body">
       <h1>Modificadores de acceso</h1>
-      <hr className="black" />
-      <button>
+      <hr />
+      <Link to="/">
         {" "}
-        <Link to="/"> Go Back </Link>{" "}
-      </button>
+        <MdArrowBack size={50} />
+      </Link>
 
       <p>
-        En Java, y en general, los modificadores de acceso son programación orientada a objetos que se
-        utiliza para establecer la accesibilidad de clases, constructores,
-        métodos y otros miembros de Java. Usando los modificadores de acceso
-        podemos establecer el alcance o la accesibilidad de estas clases,
-        métodos, constructores y otros miembros.{" "}
+        En Java, y en general, los modificadores de acceso son programación
+        orientada a objetos que se utiliza para establecer la accesibilidad de
+        clases, constructores, métodos y otros miembros de Java. Usando los
+        modificadores de acceso podemos establecer el alcance o la accesibilidad
+        de estas clases, métodos, constructores y otros miembros.{" "}
       </p>
 
       <ul>
@@ -67,7 +68,11 @@ function AccessModifiersComponent() {
         sea dato o método.
       </p>
 
-      <span><a href="https://www.mygreatlearning.com/blog/the-access-modifiers-in-java/">Fuente</a></span>
+      <span>
+        <a href="https://www.mygreatlearning.com/blog/the-access-modifiers-in-java/">
+          Fuente
+        </a>
+      </span>
     </div>
   );
 }

@@ -1,17 +1,17 @@
 import "../styles.css";
 import { Link } from "react-router-dom";
+import { MdArrowBack } from "react-icons/md";
 
 function CodeReviewComponent() {
   return (
     <div className="body">
       <h1>Code Review</h1>
-      <hr className="black" />
-      <button>
+      <hr />
+      <Link to="/">
         {" "}
-        <Link to="/"> Go Back </Link>{" "}
-      </button>
+        <MdArrowBack size={50} />
+      </Link>
       <h2> ¿Que es Code Review? </h2>
-
       <img
         alt="meme sobre code review, wtf per minute"
         src="https://i2.wp.com/commadot.com/wp-content/uploads/2009/02/wtf.png?w=550&ssl=1"
@@ -32,9 +32,7 @@ function CodeReviewComponent() {
         software que podría generar una mejora incremental en la base del
         código.{" "}
       </p>
-
       <h2> ¿Para que sirve hacer Code Review? </h2>
-
       <h4> Las revisiones de código generalmente ayudan a:</h4>
       <ul>
         {" "}
@@ -46,7 +44,6 @@ function CodeReviewComponent() {
         <li>Difundir el conocimiento del código base en el equipo</li>
         <li>Exponer a todos a diferentes enfoques</li>
       </ul>
-
       <img
         alt="code review descriptive"
         src="https://miro.medium.com/max/700/1*0Ydp3fxHWjDfZcu09109qw.png"
@@ -68,12 +65,10 @@ function CodeReviewComponent() {
         </li>
         <li>¿El nuevo código se ajusta a las pautas de estilo existentes?</li>
       </ul>
-
       <p>
         A medida que las revisiones de código exponen a los desarrolladores a
         nuevas ideas y tecnologías, escribir cada vez mejor código.
       </p>
-
       <ul>
         <li>
           Mejor calidad del código: mejore la calidad del código interno y
@@ -115,12 +110,12 @@ function CodeReviewComponent() {
         malas decisiones de codificación contaminen la línea principal de
         desarrollo.
       </p>
-
       <span>
         <a href="https://blog.lelonek.me/how-should-we-do-code-reviews-ced54cede375">
           Fuente{" "}
         </a>
-      </span>
+      </span>{" "}
+      <br />
       <span>
         <a href="https://commadot.com/wtf-per-minute/">
           Buen articulo sobre el tema{" "}

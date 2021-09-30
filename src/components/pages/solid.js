@@ -1,12 +1,17 @@
 import "../styles.css";
 import { Link } from "react-router-dom";
-import "../styles.css"
+import "../styles.css";
+import { MdArrowBack } from "react-icons/md";
+
 function SolidComponent() {
   return (
     <div className="body">
       <h1>Principio SOLID</h1>
-      <hr className="black" />
-      <button>  <Link to="/"> Go Back </Link> </button>
+      <hr />
+      <Link to="/">
+        {" "}
+        <MdArrowBack size={50} />
+      </Link>
 
       <p>
         {" "}
