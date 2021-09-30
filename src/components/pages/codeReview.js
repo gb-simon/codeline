@@ -11,7 +11,7 @@ function CodeReviewComponent() {
         {" "}
         <MdArrowBack size={50} />
       </Link>
-      <h2> ¿Que es Code Review? </h2>
+      <h2> ¿Qué es Code Review? </h2>
       <img
         alt="meme sobre code review, wtf per minute"
         src="https://i2.wp.com/commadot.com/wp-content/uploads/2009/02/wtf.png?w=550&ssl=1"
@@ -32,13 +32,13 @@ function CodeReviewComponent() {
         software que podría generar una mejora incremental en la base del
         código.{" "}
       </p>
-      <h2> ¿Para que sirve hacer Code Review? </h2>
+      <h2> ¿Para qué sirve hacer Code Review? </h2>
       <h4> Las revisiones de código generalmente ayudan a:</h4>
       <ul>
         {" "}
         <li>
           {" "}
-          Atrapando bichos (Localizar <i>bugs</i>){" "}
+          Atrapar bichos (Localizar <i>bugs</i>){" "}
         </li>
         <li>Garantizar la legibilidad y el mantenimiento del código.</li>
         <li>Difundir el conocimiento del código base en el equipo</li>
