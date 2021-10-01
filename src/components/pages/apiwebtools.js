@@ -5,21 +5,21 @@ import { MdArrowBack } from "react-icons/md";
 function ApiWebToolsComponent() {
   return (
     <div className="body">
-      <h1>Api Web Tools</h1>
+      <h1>API Web Tools</h1>
       <hr />
       <Link to="/">
         {" "}
         <MdArrowBack size={50} />
       </Link>
 
-      <h2>Que son las API Tools?</h2>
+      <h2>¿Qué son las API Tools?</h2>
 
       <p>
-        Una API es un conjunto de funciones que permite a las aplicaciones
-        acceder a datos mientras interactúan con componentes de software
-        externos, servicios operativos, etc. En lo que respecta al
-        almacenamiento en la nube, las API coordinan el intercambio de datos
-        entre las infraestructuras del sistema.
+        En API Testing, se utiliza software para enviar llamadas a la API, obtener
+        resultados y registrar la respuesta del sistema. Para el desarrollo
+        ágil, las pruebas de API se vuelven importantes a medida que los ciclos
+        de desarrollo más cortos ejercen más presión sobre las pruebas
+        automatizadas.
       </p>
 
       <h3>Algunas API Testing Tools</h3>

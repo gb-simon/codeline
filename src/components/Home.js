@@ -6,23 +6,22 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { Link } from "react-router-dom";
 import Header from "./Header";
-import './styles.css';
-
+import Footer from "./Footer";
+import "./styles.css";
 
 function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  
 
   return (
     <div className={`${darkMode && "dark-mode"}`}>
       <div className="container">
-        <Header handleToggleDarkMode={setDarkMode} />
-        <h3 className='sub-title'>
+        <Header className="dark-mode" handleToggleDarkMode={setDarkMode} />
+        <h3 className="sub-title">
           {" "}
           “The most damaging phrase in the language is... it's always been done
           this way” - Grace Hopper
         </h3>
-       
+
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -166,6 +165,7 @@ function Home() {
           <VerticalTimelineElement />
         </VerticalTimeline>
       </div>
+      <Footer />
     </div>
   );
 }
