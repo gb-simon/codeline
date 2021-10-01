@@ -54,8 +54,7 @@ function DesignPatternsComponent() {
       </p>
       <h3>Tipos de patrones de diseño</h3>
       <p>
-        Hay alrededor de 26 patrones descubiertos actualmente (no creo que lo
-        haga hazlos todos ...).
+        Hay alrededor de 26 patrones descubiertos actualmente.
       </p>
       <p>Estos 26 se pueden clasificar en 3 tipos:</p>
       <ul>
@@ -79,7 +78,7 @@ function DesignPatternsComponent() {
       <h3> Proposito</h3>
       <p>
         {" "}
-        Singleton es un patrón de diseño creacional que nos permite asegurarnos
+        Singleton es un patrón de diseño creacional que permite asegurarnos
         de que una clase tenga una única instancia, a la vez que proporciona un
         punto de acceso global a dicha instancia.
       </p>
@@ -91,7 +90,7 @@ function DesignPatternsComponent() {
         clase. Eso también utiliza su propio método getInstance () para obtener
         el objeto que se utilizará.
       </p>
-      <p>Una clase que usa el patrón de diseño singleton incluirá,</p>
+      <p>Una clase que usa el patrón de diseño singleton incluirá:</p>
       <ul>
         <li>
           {" "}

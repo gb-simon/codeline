@@ -54,16 +54,7 @@ function PolymorphismComponent() {
           que hereda de otra clase. Una función de anulación "reemplaza" una
           función heredada de la clase base, pero lo hace de tal manera que se
           la llama incluso cuando una instancia de su clase pretende ser de un
-          tipo diferente a través del polimorfismo. Refiriéndose al ejemplo
-          anterior, podría definir su propia clase y anular la función toString
-          (). Debido a que esta función se hereda de Object, seguirá estando
-          disponible si copia una instancia de esta clase en una variable de
-          tipo Object. Normalmente, si llama a toString () en su clase mientras
-          pretende ser un Object, la versión de toString que realmente se
-          activará es la definida en el Object mismo. Sin embargo, debido a que
-          la función es una invalidación, la definición de toString () de su
-          clase se usa incluso cuando el tipo verdadero de la instancia de la
-          clase está oculto detrás del polimorfismo.{" "}
+          tipo diferente a través del polimorfismo.{" "}
         </p>
         <h4>Polimorfismo Dinámico</h4>
         <p>

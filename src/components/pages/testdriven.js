@@ -31,10 +31,9 @@ function TestDrivenComponent() {
           y se comporta bien con las funcionalidades anteriores
         </li>
       </ul>
-      <h3>Example (in JavaScript) </h3>
       <span>
         <a href="https://gonzalosimon.hashnode.dev/javascript-challenge-with-test-job-interview-challenge">
-          Enlace a mi articulo
+          Ejemplo (JavaScript - Jest)
         </a>
       </span>{" "}
       <br />

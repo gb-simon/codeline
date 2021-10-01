@@ -127,7 +127,7 @@ function Home() {
             date="Use the API, Luke"
           >
             <Link className="link" to="apiweb">
-              <h3 className="vertical-timeline-element-title">Api Web</h3>
+              <h3 className="vertical-timeline-element-title">API Web</h3>
               <p>¿Qué es y cómo funciona una API web?</p>{" "}
             </Link>
           </VerticalTimelineElement>
@@ -137,7 +137,7 @@ function Home() {
           >
             <Link className="link" to="apiwebtools">
               <h3 className="vertical-timeline-element-title">
-                Herramientas Api Web
+                Herramientas API Web
               </h3>
               <p>¿Qué herramientas se pueden utilizar para probar Web APIs?</p>{" "}
             </Link>
@@ -159,7 +159,7 @@ function Home() {
           >
             <Link className="link" to="testdriven">
               <h3 className="vertical-timeline-element-title">Test</h3>
-              <p>Test driven development</p>{" "}
+              <p>Test Driven Development</p>{" "}
             </Link>
           </VerticalTimelineElement>
           <VerticalTimelineElement />
