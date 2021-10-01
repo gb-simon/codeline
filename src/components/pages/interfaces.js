@@ -27,6 +27,38 @@ function InterfacesComponent() {
         Un La interfaz es una "clase abstracta" que se utiliza para agrupar
         métodos con cuerpos vacíos.
       </p>
+      <img
+        alt="representacion de una interfaz"
+        src="https://i.imgur.com/HAfYd0F.png"
+      />
+      <h3> ¿De qué me sirve una interfaz? </h3>
+      <p> El uso de las interfaces Java proporciona las siguientes ventajas:</p>
+      <ul>
+        <li>Se utiliza para lograr la abstracción.</li>
+        <li>
+          Por interfaz, podemos admitir la funcionalidad de herencia múltiple.
+        </li>
+        <li>Organizar la programación.</li>
+        <li>
+          permiten declarar constantes que van a estar disponibles para todas
+          las clases que queramos (implementando esa interfaz)
+        </li>
+        <li>Establecer relaciones entre clases que no estén relacionadas.</li>
+        <li>
+          Obligar a que ciertas clases utilicen los mismos métodos (nombres y
+          parámetros).
+        </li>
+      </ul>
+      <h4> Ejemplo </h4>
+      <img
+        alt="ilustracion de un ejemplo en codigo de una interfaz"
+        src="https://i.imgur.com/B9fzoac.png"
+      />{" "}
+      <br />
+      <span>
+        <a href="https://es.wikipedia.org/wiki/Interfaz_(Java)">Fuente</a>
+      </span>
+      <br />
       <span>
         <a href="https://www.tutorialspoint.com/java/java_interfaces.htm">
           Fuente
