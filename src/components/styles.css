@@ -32,6 +32,15 @@ li {
   padding-top: 25px;
 }
 
+.class-img{
+  width: 70%;
+}
+@media only screen and (max-width: 600px) {
+  .class-img {
+    width: 150%;
+  }
+}
+
 /* Footer */
 .footer {
   margin-top: 30px;
